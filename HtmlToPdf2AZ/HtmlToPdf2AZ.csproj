@@ -9,7 +9,20 @@
 	<Company>Solutions2AZ</Company>
 	<Description>Simple and Fast Library to Convert Html to PDF</Description>
 	<PackageProjectUrl>https://www.solutions2az.net</PackageProjectUrl>
+	<RepositoryUrl>https://github.com/Solutions2AZ/HtmlToPdf2AZ</RepositoryUrl>
+	<RepositoryType>git</RepositoryType>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
+	<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+	<PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
+	
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+	
 
   <ItemGroup>
     <PackageReference Include="PuppeteerSharp" Version="7.0.0" />

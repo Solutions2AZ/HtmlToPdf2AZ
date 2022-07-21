@@ -4,11 +4,22 @@ using System.Text;
 
 namespace HtmlToPdf2AZ.Models
 {
+    /// <summary>
+    /// PaperFormat
+    /// </summary>
     public class PaperFormat : PuppeteerSharp.Media.PaperFormat
     {
+        /// <summary>
+        /// PaperFormat
+        /// </summary>
+        /// <param name="width"></param>
+        /// <param name="height"></param>
         public PaperFormat(decimal width, decimal height) : base(width, height)
         {
         }
+        /// <summary>
+        /// Letter
+        /// </summary>
         public static PaperFormat Letter => new PaperFormat(8.5m, 11);
 
         /// <summary>
