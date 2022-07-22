@@ -4,16 +4,18 @@
     <TargetFramework>netstandard2.1</TargetFramework>
     <Nullable>enable</Nullable>
 	<PackageId>HtmlToPdf2AZ</PackageId>
-	<Version>1.0.0</Version>
-	<Authors>Solutions2AZ</Authors>
+	<Version>1.0.1</Version>
+	<Authors>gmoreno90</Authors>
 	<Company>Solutions2AZ</Company>
-	<Description>Simple and Fast Library to Convert Html to PDF</Description>
+	<Description>Simple and Fast Library to Convert Html to PDF or URL to PDF</Description>
 	<PackageProjectUrl>https://www.solutions2az.net</PackageProjectUrl>
 	<RepositoryUrl>https://github.com/Solutions2AZ/HtmlToPdf2AZ</RepositoryUrl>
-	<RepositoryType>git</RepositoryType>
+	<RepositoryType></RepositoryType>
 	<PackageReadmeFile>README.md</PackageReadmeFile>
 	<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 	<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	<PackageIcon>logo_2az.png</PackageIcon>
+	<PackageTags>pdf;converter;htmltopdf;html2pdf;htmltopdf2az;html-to-pdf;html-to-pdf-dotnet;html-to-pdf-netcore;free-html-to-pdf;converter-html-to-pdf;net-standard;netcore;freehtmltopdf;freehtmltopdfnetcore</PackageTags>
   </PropertyGroup>
 	
   <ItemGroup>
@@ -26,6 +28,14 @@
 
   <ItemGroup>
     <PackageReference Include="PuppeteerSharp" Version="7.0.0" />
+  </ItemGroup>
+	
+
+  <ItemGroup>
+    <None Update="logo_2az.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
