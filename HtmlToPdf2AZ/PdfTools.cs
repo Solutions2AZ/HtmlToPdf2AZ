@@ -42,10 +42,18 @@ namespace HtmlToPdf2AZ
             await using var browser = await Puppeteer.LaunchAsync(
                 new LaunchOptions
                 {
-                    //Headless = true,
+                    Headless = true,
+                    Args = new string[] { "--no-sandbox" }
                     //ExecutablePath = @"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
                 }
             );
+            //if (IsLinux() || IsMacOs())
+            //{
+            //    var path = Launcher.GetExecutablePath();
+            //    Console.WriteLine($"Setting permissions: {path}");
+
+            //    Exec($"chmod 777 {path}");
+            //}
             await using var page = await browser.NewPageAsync();
             await page.SetContentAsync(htmlContent);
             var pdfOptions = new PdfOptions()
@@ -101,6 +109,8 @@ namespace HtmlToPdf2AZ
             await using var browser = await Puppeteer.LaunchAsync(
                 new LaunchOptions
                 {
+                    Headless = true,
+                    Args = new string[] { "--no-sandbox" }
                     //Headless = true,
                     //ExecutablePath = @"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
                 }
